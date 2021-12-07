@@ -3,13 +3,13 @@ import Level1 from "./something/Level1";
 
 
 function App() {
-  function transformation(some) {
-    const displaying = some.reduce((value, element) => value + element, 0);
+  // function transformation(some) {
+  //   const displaying = some.reduce((value, element) => value + element, 0);
 
-    console.log(displaying);
-    return displaying
-  }
-  const transformed = Level1(transformation);
+  //   console.log(displaying);
+  //   return displaying
+  // }
+  const transformed = Level1(value => value.reduce((number, element) => number + element, 0));
 
   return (
     <div>
